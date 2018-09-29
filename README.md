@@ -1,1 +1,1 @@
-Deployed at https://git.heroku.com/matti-puhelinluettelo.git
+Deployed at https://matti-puhelinluettelo.herokuapp.com/
