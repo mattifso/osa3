@@ -1,3 +1,5 @@
+@personId=5bb27b765ff68189f4fc6875
+###
 POST http://localhost:3001/api/persons  HTTP/1.1
 content-type: application/json
 
@@ -7,4 +9,21 @@ content-type: application/json
 }
 
 ###
+
+PUT http://localhost:3001/api/persons/{{personId}}  HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test person",
+    "number": "555-54231"
+}
+
+
+###
 GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons/{{personId}}
+
+###
+DELETE http://localhost:3001/api/persons/{{personId}}
